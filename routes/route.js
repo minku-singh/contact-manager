@@ -20,8 +20,9 @@ router.get('/contacts', (req, res, next)=>{
 //add contact
 // FLOW: contacts.component.html -> contacts.component.ts -> contact.service.ts -> route.js(operation to execute on the MongoDb database).
 router.post('/contact', (req, res, next)=>{
+    let fname = req.body.first_name
     let newContact = new Contact ({
-        first_name : req.body.first_name,
+        first_name : fname,
         last_name : req.body.last_name,
         phone : req.body.phone
     });

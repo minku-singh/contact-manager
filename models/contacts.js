@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const ContactSchema = mongoose.Schema({
     first_name:{
         type: String,
-        required: true       
+        required: true      
     },
     last_name:{
         type: String,
@@ -20,4 +20,5 @@ const ContactSchema = mongoose.Schema({
 });
 
 //export scheme
-const Contact = module.exports = mongoose.model('Contact', ContactSchema)
+const Contact = mongoose.model('Contact', ContactSchema)
+modue.exports = Contact
