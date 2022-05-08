@@ -1,6 +1,10 @@
-<br>
+<nav class="navbar navbar-expand-lg mb-4 navbar-dark bg-primary">
+  <div class="container-fluid" >
+    <a style="font-weight: bold" class="navbar-brand" href="#">📱CONTACT MANAGER📱</a>
+  </div>
+</nav>
 <div class = "container">
-  <h2 class = "page-header" align="center" > Add Contact </h2>
+  <!-- <h2 class = "page-header" align="center" > Contact Manager </h2> -->
   <form [formGroup]="angForm" (submit) = "addContact()" (keydown.enter)="$event.preventDefault()">
     <div class = "form-group" float = "left" display = "inline-block">
       <label>First Name</label>
@@ -36,8 +40,8 @@
 
 <hr>
 
-<div class = 'container'>
-  <div class = 'row'>
+<div class = 'container d-flex'>
+  <!-- <div class = 'row'>
     <div class = "col-md-3">First Name</div>
     <div class = "col-md-3">Last Name</div>
     <div class = "col-md-3">Phone Number</div>
@@ -53,5 +57,22 @@
         <br> <br>
       </div>
     </div>
+  </div> -->
+
+  <div class="d-flex" style="flex-wrap: wrap">
+    <div *ngFor = "let contact of contacts" class="card border-primary mb-3 mx-2" style="min-width: 15rem;">
+      <div class="card-header">{{contact.first_name}}</div>
+      <div class="card-body">
+        <p class="card-text">first name: {{contact.first_name}}</p>
+        <p class="card-text">last name: {{contact.last_name}}</p>
+        <p class="card-text">phone: {{contact.phone}}</p>
+      </div>
+    </div>
   </div>
+  
+  
 </div>
+<footer style="text-align: center; margin: 2vw; display:block">
+    <small>&copy; 2022,  Built with ❤ as WTL mini project</small>
+    <p><a href="">source code</a></p>
+</footer>

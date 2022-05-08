@@ -13,11 +13,11 @@ var app = express(); // To use express application we need to assign express met
 const route = require('./routes/route');
 
 //Connect to MongoDb
-mongoose.connect('mongodb://localhost:27017/contactlist', { useNewUrlParser: true });
+mongoose.connect('mongodb+srv://minku:1234@cluster0.2xw5r.mongodb.net/contact-manager?retryWrites=true&w=majority', { useNewUrlParser: true });
 
 //On Successful connection
 mongoose.connection.on('connected', ()=>{
-    console.log('Connected to database mongodb@21017');
+    console.log('Connected to database');
 });
 
 //Incase of any error during connection
