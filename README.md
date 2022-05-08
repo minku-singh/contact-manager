@@ -1,14 +1,7 @@
 # Contact-Manager-Using-MEAN-Stack
 Contact list manager web app using  MongoDB, Express.js, AngularJS, and Node.js (MEAN stack)
 
-## Before you begin
 
-Before you begin I recommend you to read about the basic building blocks that assemble a MEAN.JS application.
-
-- MongoDB - Go through [MongoDB Official Website](https://www.mongodb.com/) and proceed to their [Official Manual](https://docs.mongodb.com/manual/), which should help you understand NoSQL and MongoDB better.
-- Express - The best way to understand express is through its [Official Website](https://expressjs.com/), which has a [Getting Started guide](http://expressjs.com/en/starter/installing.html), as well as an [ExpressJS guide](http://expressjs.com/en/guide/routing.html) for general express topics
-- AngularJS - Angular's [Official Website](https://angular.io/) is a great starting point. You can also use [Thinkster Popular Guide](https://thinkster.io/), and [Egghead Videos](https://egghead.io/).
-- Node.js - Start by going through Node.js [Official Website](https://nodejs.org/en/) and this [StackOverflow Thread](https://stackoverflow.com/questions/2353818/how-do-i-get-started-with-node-js), which should get you going with the Node.js platform in no time.
 
 ## Installation
 
@@ -23,12 +16,6 @@ Before you begin I recommend you to read about the basic building blocks that as
   md "\data\db"
 ```
 
-### Get the Code
-Either clone this repository or fork it on GitHub and clone your fork.
-```
-  git clone https://github.com/tharunrajsoma/Contact-Manager-Using-MEAN-Stack.git
-  cd contact-list-application
-```
 
 ### Get the Dependencies
 - mongoose - It is a object document mapper for using MongoDB.
@@ -85,10 +72,5 @@ Open Node.js command prompt in project root directory.
 
 ### Contact List App UI
 
-<p align = 'center'>
-  <img src = '/images/contact_list_app.png'>
-</p>
-
-#### Congratulations you can now run your contact list manager app using MEAN stack.
 
 
